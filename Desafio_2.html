@@ -294,7 +294,7 @@
           if (ordem === "crescente") {
             deveTrocar = lista[i].nome.toLowerCase() > lista[j].nome.toLowerCase();
           } else {
-            deveTrocar === lista[i].nome < lista[j].nome;
+            deveTrocar = lista[i].nome < lista[j].nome;
           }
 
           if (deveTrocar) {
@@ -339,8 +339,6 @@
 
       aplicarFiltros();
     }
-
-
 
     // Mostra todos os produtos quando a página carrega
     mostrarProdutos(produtos);
