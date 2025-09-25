@@ -1,0 +1,61 @@
+$cor-principal: #266436;
+$cor-destaque: rgb(7, 78, 7);
+$espacamento: 15px;
+
+@mixin card-estilizado($raio, $sombra, $cor) {
+    border-radius: $raio;
+    box-shadow: 0 3px 6px $sombra;
+    border-top: 5px solid $cor;
+    padding: $espacamento;
+    background-color: rgb(238, 249, 206);
+    text-align: center;
+}
+
+%titulo-card {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $cor-destaque;
+}
+
+%texto-card {
+    font-size: 1.0rem;
+    color: #280a7a;
+    line-height: 1.4;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $espacamento;
+    padding: $espacamento;
+
+    .card {
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-20px);
+        }
+
+        h3 {
+            @extend %titulo-card;
+        }
+
+        p {
+            @extend %texto-card;
+        }
+    }
+}
+
+.card--web {
+    @include card-estilizado(10px, rgba(0, 0, 0, 0.15), #10ab43);
+}
+
+.card--design {
+    @include card-estilizado(10px, rgba(0, 0, 0, 0.15), #dc1515);
+}
+
+.card--marketing {
+    @include card-estilizado(10px, rgba(0, 0, 0, 0.15), #961883);
+}
