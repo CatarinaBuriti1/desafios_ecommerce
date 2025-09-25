@@ -1,0 +1,28 @@
+p {
+  color: blue;
+}
+
+.texto1 {
+  font-size: 1.2em;
+  color: blue;
+}
+
+.texto2 {
+  font-size: 1.2em;
+  color: red;
+}
+
+.texto3 {
+  font-size: 1.2em;
+  color: green;
+}
+
+ul {
+  color: red;
+}
+
+.caixa ul {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
