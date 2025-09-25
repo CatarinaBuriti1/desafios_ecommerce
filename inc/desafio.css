@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #2089d9;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu:hover {
+  background-color: #b1ca23;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: #b1ca23;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  background-color: #2089d9;
+}
+
+/*# sourceMappingURL=desafio.css.map */

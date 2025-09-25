@@ -1,0 +1,55 @@
+$cor-principal: #2089d9;
+$cor-secundaria: #b1ca23;
+$fonte-padrao: white;
+$fonte-padrao: 14px;
+
+@mixin caixa-estilizada($raio, $sombra) {
+  border-radius: $raio;
+  box-shadow: 0 2px 5px $sombra;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: $cor-principal;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu:hover {
+    background-color: $cor-secundaria;
+}
+
+%clicavel {
+    font-size: $fonte-padrao;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+
+}
+
+.btn {
+@extend %clicavel;
+background-color: $cor-secundaria;
+color: white;
+border: none;
+cursor: pointer;
+
+@include caixa-estilizada(8px, rgba(0,0,0,0.2));
+
+&:hover {
+background-color: $cor-principal;
+}
+
+}
+
+
+
